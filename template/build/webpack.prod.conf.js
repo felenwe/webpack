@@ -23,8 +23,8 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
-    filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
+    filename: utils.assetsPath('js/[name].js'), //utils.assetsPath('js/[name].[chunkhash].js'), build后不加hash码
+    chunkFilename: utils.assetsPath('js/[id].js') //utils.assetsPath('js/[id].[chunkhash].js') build后不加hash码
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html

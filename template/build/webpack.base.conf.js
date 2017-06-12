@@ -54,8 +54,8 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          limit: 0, //10000,  图片不要压缩成base64
+          name: utils.assetsPath('img/[name].[ext]') //utils.assetsPath('img/[name].[hash:7].[ext]') build后文件名不加hash码
         }
       },
       {
@@ -63,7 +63,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+          name: utils.assetsPath('fonts/[name].[ext]') //utils.assetsPath('fonts/[name].[hash:7].[ext]') build后文件名不加hash码
         }
       }
     ]
