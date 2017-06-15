@@ -4,9 +4,8 @@ var path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
-    // 修改build目录到server/public
-    index: path.resolve(__dirname, '../server/views/admin/index.ejs'),// path.resolve(__dirname, '../dist/index.html'),
-    assetsRoot: path.resolve(__dirname, '../server/public'),// path.resolve(__dirname, '../dist'),
+    index: path.resolve(__dirname, '../dist/index.html'),
+    assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     productionSourceMap: true,

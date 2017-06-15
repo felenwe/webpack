@@ -1,0 +1,9 @@
+{
+  "actions": {
+    "getProjects": "getProjects",
+    "delProjects": "delProjects"
+  },
+  "mutations": {
+    "updateProjects": "updateProjects"
+  }
+}
